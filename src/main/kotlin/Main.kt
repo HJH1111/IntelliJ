@@ -1,5 +1,5 @@
 open class Calculator {
-        open fun calculate(n1: Double, n2: Double): Double {
+    open fun calculate(n1: Double, n2: Double): Double {
         return 0.0
     }
 }
@@ -16,31 +16,25 @@ class Minus : Calculator() {
     }
 }
 
-class Multiply : Calculator () {
+class Multiply : Calculator() {
     override fun calculate(n1: Double, n2: Double): Double {
         return n1 * n2
     }
 }
 
-class Divide : Calculator () {
+class Divide : Calculator() {
     override fun calculate(n1: Double, n2: Double): Double {
         return n1 / n2
     }
 }
 
-class Mod : Calculator () {
+class Mod : Calculator() {
     override fun calculate(n1: Double, n2: Double): Double {
         return n1 % n2
     }
 }
 
-fun main () {
-    val plus = Plus()
-    val minus = Minus()
-    val multiply = Multiply()
-    val divide = Divide()
-    val mod = Mod()
-
+fun main() {
     var reload = true
 
     while (reload) {
@@ -48,15 +42,14 @@ fun main () {
         var n1: Double = readLine()!!.toDouble()
 
         println("다음은 연산부호입니다")
-
         println("+, -, *, /, %")
         var operator: String = readLine()!!
+
 
         println("2번 숫자를 넣어주세요")
         var n2: Double = readLine()!!.toDouble()
 
         var cl: Double = 0.0
-
 
 
         when (operator) {
@@ -72,11 +65,13 @@ fun main () {
         println("${cl}")
 
         println("한번더? Y/N")
-        val onemore = readLine()!!
+        val onemore = readLine()!!.toUpperCase()
         if (onemore != "Y") {
             reload = false
         }
+
     }
+    println("종료")
 }
 
 
@@ -84,24 +79,3 @@ fun main () {
 
 
 
-
-
-
-
-
-
-
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
