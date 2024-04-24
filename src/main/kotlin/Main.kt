@@ -1,5 +1,5 @@
 open class Calculator {
-        open fun calculate(n1: Double, n2: Double): Double {
+    open fun calculate(n1: Double, n2: Double): Double {
         return 0.0
     }
 }
@@ -16,31 +16,25 @@ class Minus : Calculator() {
     }
 }
 
-class Multiply : Calculator () {
+class Multiply : Calculator() {
     override fun calculate(n1: Double, n2: Double): Double {
         return n1 * n2
     }
 }
 
-class Divide : Calculator () {
+class Divide : Calculator() {
     override fun calculate(n1: Double, n2: Double): Double {
         return n1 / n2
     }
 }
 
-class Mod : Calculator () {
+class Mod : Calculator() {
     override fun calculate(n1: Double, n2: Double): Double {
         return n1 % n2
     }
 }
 
-fun main () {
-    val plus = Plus()
-    val minus = Minus()
-    val multiply = Multiply()
-    val divide = Divide()
-    val mod = Mod()
-
+fun main() {
     var reload = true
 
     while (reload) {
@@ -78,18 +72,6 @@ fun main () {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //
