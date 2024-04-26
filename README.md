@@ -28,10 +28,12 @@ fun main() 함수에서 실행 할 수 있습니다
 
 ### 작동원리
 
+'''
 open class Calculator {
     open fun calculate(n1: Double, n2: Double): Double {
         return 0.0
     }
+'''
 
 Calculator 클래스는 기본 클래스이며 calculate 메서드는 Double 타입 매개변수를 받아 계산하고 결과를 반환합니다
 
